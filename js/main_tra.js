@@ -25,8 +25,6 @@ else if(url.endsWith(contact_us)) {
 else if(url.endsWith(about_us)) {
     page_now = about_us;
 }
-else{
-    document.location = "error.html";
-}
+
 // console.log(page_now);
 chooise_tap(page_now.substr(0,page_now.search("html")-1));
