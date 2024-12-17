@@ -61,8 +61,7 @@ function removeItem(index) {
 
 
 
-
-if (url.endsWith(home)) {
+if (url.endsWith(home) ) {
     page_now = "home.html";
     function topFunction() {
         document.body.scrollTop = 0; 
