@@ -1,0 +1,57 @@
+
+section {
+    margin: 50px auto;
+    padding: 100px;
+    text-align: center;
+    max-width: 1300px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+}
+
+h1, h2 {
+    color: #007bff; 
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+.welcome-section {
+    background-color: #e9f5ff; 
+    border: 2px solid #007bff;
+}
+
+.about-section {
+    background-color: #f9f9f9;
+    border: 2px solid #6c757d;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.my-5 {
+    margin: 20px 0;
+}
+#topBtn {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #007bff; 
+    color: white; 
+    cursor: pointer; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    font-size: 16px;
+}
+
+#topBtn:hover {
+    background-color: #0056b3; 
+}

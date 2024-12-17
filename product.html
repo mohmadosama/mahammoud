@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en"  data-bs-theme="auto">  
+  <head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="description" content="">
+	  <meta name="author" content="Team">
+	  <title>Product</title>  
+	  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+	  <link href="css/headers.css" rel="stylesheet">
+	  <link href="css/carousel.css" rel="stylesheet">
+	  <link href="css/product.css" rel="stylesheet">
+  </head>
+  <body>      
+	  <div class="container">
+		<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+		  <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+			<li><a id="home" href="index.html" class="nav-link px-2">Home</a></li>
+			<li><a id = "product" href="product.html" class="nav-link px-2">Product</a></li>
+			<li><a id = "basket" href="basket.html" class="nav-link px-2">Basket</a></li>
+			<li><a id = "faq" href="faq.html" class="nav-link px-2">FAQs</a></li>
+			<li><a id = "contact_us" href="contact_us.html" class="nav-link px-2">Contact Us</a></li>
+			<li><a id = "about_us" href="about_us.html" class="nav-link px-2">About Us</a></li>
+		  </ul>
+
+		  <div class="col-md-3 text-end">
+			<a href="login.html">
+				<button type="button" id="login" class="btn btn-outline-primary me-2">Login</button>
+			</a>
+			<a href="signup.html">
+				<button type="button"  class="btn btn-primary">Sign-up</button>
+			</a>
+		  </div>		  
+		</header>
+			<main>
+			<div class="row mb-3 text-center">
+					<div class="col-4 themed-grid-col">
+						<div class="card mb-4 rounded-3 shadow-sm">
+							<div class="card-header py-3">
+								<h4 class="my-0 fw-normal">ساعة اليد الحديثة</h4>
+							</div>
+							<div class="card-body">
+								<img src="images/switch.jpg" 
+									 alt="ساعة اليد" class="img-fluid mb-3">
+								<p>ساعة يد أنيقة بتصميم عصري ومثالي لجميع المناسبات.</p>
+								<p><strong>السعر:</strong> $25.00</p>
+								<br></br>
+								<br></br>
+								<button type="button" class="w-100 btn btn-lg btn-primary" 
+									onclick="addToCart('ساعة اليد الحديثة', 25); window.location.href='basket.html';">
+									أضف إلى السلة
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-4 themed-grid-col">
+						<div class="card mb-4 rounded-3 shadow-sm">
+							<div class="card-header py-3">
+								<h4 class="my-0 fw-normal">سماعات الرأس اللاسلكية</h4>
+							</div>
+							<div class="card-body">
+								<img src="images/headphone.jpg"  
+									 alt="سماعات الرأس" class="img-fluid mb-3">
+								<p>سماعات رأس لاسلكية بجودة صوت عالية وراحة فائقة.</p>
+								<p><strong>السعر:</strong> $40.00</p>
+								
+								<button type="button" class="w-100 btn btn-lg btn-primary" 
+									onclick="addToCart('سماعات الرأس اللاسلكية', 40); window.location.href='basket.html';">
+									أضف إلى السلة
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-4 themed-grid-col">
+						<div class="card mb-4 rounded-3 shadow-sm">
+							<div class="card-header py-3">
+								<h4 class="my-0 fw-normal">الكمبيوتر اللوحي (اللابتوب)</h4>
+							</div>
+							<div class="card-body">
+								<img src="images/laptop.jpg"  
+									 alt="الكمبيوتر اللوحي" class="img-fluid ">
+								<p>كمبيوتر لوحي محمول بأداء عالي للاستخدام الشخصي والعملي.</p>
+								<p><strong>السعر:</strong> $350.00</p>
+								<button type="button" class="w-100 btn btn-lg btn-primary" 
+									onclick="addToCart('الكمبيوتر اللوحي (اللابتوب)', 350); window.location.href='basket.html';">
+									أضف إلى السلة
+								</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			</main>
+			<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+			  <div class="col-md-4 d-flex align-items-center">
+				<span class="mb-3 mb-md-0 text-body-secondary">© 2025 Company, Inc</span>
+			  </div>
+			</footer>
+	  </div>
+	  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+	  <script src="js/main_tra.js"></script>
+	</body>
+</html>

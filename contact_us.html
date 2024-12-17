@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"  data-bs-theme="auto">   
+  <head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="description" content="">
+	  <meta name="author" content="Team">
+	  <title>Contact Us</title>  
+	  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+	  <link href="css/headers.css" rel="stylesheet">
+	  <link href="css/contantus.css" rel="stylesheet">
+  </head>
+  <body>      
+	  <div class="container">
+		<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+		  <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+			<li><a id="home" href="index.html" class="nav-link px-2">Home</a></li>
+			<li><a id = "product" href="product.html" class="nav-link px-2">Product</a></li>
+			<li><a id = "basket" href="basket.html" class="nav-link px-2">Basket</a></li>
+			<li><a id = "faq" href="faq.html" class="nav-link px-2">FAQs</a></li>
+			<li><a id = "contact_us" href="contact_us.html" class="nav-link px-2">Contact Us</a></li>
+			<li><a id = "about_us" href="about_us.html" class="nav-link px-2">About Us</a></li>
+		  </ul>
+
+		  <div class="col-md-3 text-end">
+			<a href="login.html">
+				<button type="button" id="login" class="btn btn-outline-primary me-2">Login</button>
+			</a>
+			<a href="signup.html">
+				<button type="button"  class="btn btn-primary">Sign-up</button>
+			</a>
+		  </div>
+		</header>	
+        <main class="form-signin w-100 m-auto text-center">
+            <section class="contact-container">
+                <h2>We'd love to hear from you!</h2>
+                <p>Please fill out the form below, and we'll get back to you as soon as possible.</p>
+                
+                <!-- Contact Form -->
+                <form id="contactForm" class="contact-form">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" >
+
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" >
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Enter your message" ></textarea>
+
+                    <button type="submit" class="btn2">Send Message</button>
+                </form>
+            </section>
+        </main>		
+	  </div>
+	  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+	  <script src="js/main_tra.js"></script>
+      <script>
+			document.getElementById("contactForm").addEventListener("submit", function(event) {
+				event.preventDefault();
+
+				const name = document.getElementById("name").value.trim();
+				const email = document.getElementById("email").value.trim();
+				const message = document.getElementById("message").value.trim();
+
+				if (!name || !email || !message) {
+					alert("يرجى ملء جميع الحقول!");
+					return;
+				}
+
+				const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+				if (!emailPattern.test(email)) {
+					alert("يرجى إدخال بريد إلكتروني صحيح!");
+					return;
+				}
+
+				alert("تم إرسال رسالتك بنجاح! شكرًا لتواصلك معنا.");
+				window.location.replace("thankyou.html");
+				//document.getElementById("contactForm").reset(); 			
+			});
+      </script>		
+	</body>
+</html>
