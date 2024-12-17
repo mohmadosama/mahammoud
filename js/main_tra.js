@@ -69,7 +69,7 @@ if (url.endsWith(home)) {
         document.documentElement.scrollTop = 0; 
       }
 } 
-else if(url.endsWith(product)) {
+else if(url.endsWith(product) ||url.endsWith("/")) {
     page_now = product;
     
 }
